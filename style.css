@@ -218,6 +218,7 @@ button{
     justify-content: center;
     align-items: center;
     margin-left: 129px;
+
     & img{
         width: 100%;
         height: 100%;
@@ -226,6 +227,7 @@ button{
     }
 }
 /* join section */
+
 .join-section{
     
     background-color: #CCE8FD;
@@ -268,10 +270,240 @@ button{
           }
     }
 }
+
   
 .copyright{
      width: 100%;
       & p{
         text-align: center;
       }
+}
+@media screen and  (max-width:757px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    /* This best practice css */
+    .container{
+     
+      margin: 0 auto;
+    }
+    
+    .between{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(1fr));
+        gap: 5rem;
+        align-items: center;
+    }
+    /* this best practice css */
+    .target-section{
+        padding: 120px 0;
+    
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        .details-section{
+            h1{
+                font-size: 30px;
+            }
+    
+            .details{
+                font-size: 18px;
+                color: #808080;
+                padding: 20px 0;
+            }
+    
+             
+              
+        }
+        .store-desgin{
+            display: flex;
+            align-items: center;
+            background-color: #CCE8FD;
+            width: fit-content;
+            padding:12px;
+            border-radius: 7px;
+            gap: 4px;
+    
+            & img{
+                width: 24px;
+            }
+            & p{
+                color: #9393C8;
+            }
+        }
+    }
+    .track-section{
+        position: relative;
+        left: 0;
+        z-index: -1;
+    
+    
+    
+        .sub-section{
+            position: absolute;
+            top: 2%;
+            z-index: 1;
+            left: 20px;
+    
+            .left-section{
+                 
+            }
+                .food-section{
+                    display: flex;
+                    gap: 10px;
+        
+                    & div {
+                         & img{
+                            padding: 5px;
+                         }
+                    }
+                    .img2{
+                        margin-top: 20px;
+                    }
+                       
+                }
+            }
+            & h1{
+              font-size: 50px;
+            }
+    
+            .right-section{
+                 .details{
+                  font-size: 30px;
+                  color:#9393C8;
+                  padding: 10px;
+                 }
+    
+                 .parcent{
+                    display: flex;
+                    gap: 6px;
+                    padding:20px;
+                    justify-content: start;
+    
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+    
+                   .details2{
+                    font-size: 15px;
+                    color: #9393C8;
+                   }
+                    
+    
+                 }
+                 
+            }
+    
+    
+        }
+
+        .cal-section{
+            padding: 120px 0 ;
+        
+        
+            .details-section{
+                h1{
+                    font-size: 50px;
+                }
+                .details{
+                    font-size: 25px;
+                    color: #808080;
+                    padding: 20px;
+                }
+            }
+        
+            .store-design{
+                display: flex;
+                background-color: #CCE8FD;
+                gap: 5px
+                ;
+                width: fit-content;
+                padding: 10px 0;
+                border-radius: 10px;
+                
+                & p{
+                    color: #808080;
+                }
+            }
+        
+        }
+        .company{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-left: 129px;
+            
+            & img{
+                width: 200%;
+                height: 100%;
+                object-fit: cover;
+        
+            }
+        
+     
+}
+.join-section{
+    
+    background-color: #CCE8FD;
+    display: grid;
+    grid-template-columns: repeat(1,minmax( 1fr));
+    gap: 1rem; ;
+    
+    border-radius: 19px;
+    align-items: center;
+    width: 100%;
+
+
+    .details-section{
+
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+          & h1{
+            font-size: 30px;
+
+          }
+
+          .store-design{
+            background-color: #0B0736
+            ;
+            padding:  6px 12px;
+            border-radius: 10px;
+
+            & img{
+                width: 20px;
+            }
+
+           .details5{
+            color: #808080;
+            font-size: 8px;
+           }
+           & h3{
+             color: white;
+             font-size: 10px;
+           }
+
+          }
+    }
+}
+
+.copyright{
+     width: 100%;
+     margin: auto 0;
+     & p{
+       text-align: center;
+       
+     }
 }
